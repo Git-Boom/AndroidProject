@@ -1,0 +1,28 @@
+ext {
+    //表示是否作为模块
+    isModule = false
+
+    //SDK统一管理
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "30.0.2",
+            applicationId    : "com.example.moduleappdemo",
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
+            versionCode      : 100000,
+            versionName      : "1.0.0"
+    ]
+
+    //版本号
+    kotlin_version = "1.4.10"
+    gradle_version = "4.1.1"
+
+    def APPCOMPAT_V7_VERSION = "28.0.0"
+    def CONSTRAINT_LAYOUT_VERSION = "1.1.3"
+
+    //三方库管理
+    dependencies = [
+            appcompatV7     : "com.android.support:appcompat-v7:" + APPCOMPAT_V7_VERSION,
+            constraintLayout: 'com.android.support.constraint:constraint-layout:' + CONSTRAINT_LAYOUT_VERSION]
+
+}

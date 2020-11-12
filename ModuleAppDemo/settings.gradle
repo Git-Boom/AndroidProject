@@ -1,0 +1,2 @@
+include ':maincomponent'
+include ':app'
