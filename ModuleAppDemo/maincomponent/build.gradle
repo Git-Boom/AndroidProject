@@ -1,7 +1,9 @@
 if (rootProject.ext.isModule) {
     apply plugin: 'com.android.library'
+    apply plugin: 'kotlin-android'
 } else {
     apply plugin: 'com.android.application'
+    apply plugin: 'kotlin-android'
 }
 
 android {

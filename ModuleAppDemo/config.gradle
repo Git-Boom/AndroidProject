@@ -15,7 +15,7 @@ ext {
 
     //版本号
     kotlin_version = "1.4.10"
-    gradle_version = "4.1.1"
+    gradle_version = "6.7"
 
     def APPCOMPAT_V7_VERSION = "28.0.0"
     def CONSTRAINT_LAYOUT_VERSION = "1.1.3"
@@ -24,5 +24,17 @@ ext {
     dependencies = [
             appcompatV7     : "com.android.support:appcompat-v7:" + APPCOMPAT_V7_VERSION,
             constraintLayout: 'com.android.support.constraint:constraint-layout:' + CONSTRAINT_LAYOUT_VERSION]
+
+    androidXLegacy = 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidXAppcompat = 'androidx.appcompat:appcompat:1.1.0'
+    androidXAnnotation = 'androidx.annotation:annotation:1.1.0'
+    androidXCore = 'androidx.core:core:1.1.0-rc03'
+    androidXFragment = 'androidx.fragment:fragment:1.1.0-rc01'
+    androidXSwiperefreshlayout = 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    androidSupportDesign = 'com.google.android.material:material:1.2.0-alpha04'
+    androidXRecyclerview = 'androidx.recyclerview:recyclerview:1.1.0-beta03'
+    androidXConstraint = 'androidx.constraintlayout:constraintlayout:1.1.3'
+    androidXLifecycle = 'androidx.lifecycle:lifecycle-runtime:2.1.0-rc01'
+    androidXMultidex = 'androidx.multidex:multidex:2.0.0'
 
 }
